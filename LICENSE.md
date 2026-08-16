@@ -1,4 +1,8 @@
-Copyright (c) 2026 UCursor/ICursor
-All rights reserved.
-My website/project and my original modifications are proprietary and may not be copied or redistributed without permission.
-This project also contains code derived from PavelDoGreat/WebGL-Fluid-Simulation, which remains under the MIT License.
+Copyright (c) 2026 UCursor/ICursor. All rights reserved.
+
+The website/project and its original code, designs, assets, and modifications
+are proprietary and may not be copied, modified, redistributed, or reused
+without permission from UCursor/ICursor.
+
+This project includes third-party software. Those components remain subject
+to their respective licenses as listed in THIRD-PARTY-LICENSES.md.
