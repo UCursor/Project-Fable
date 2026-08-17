@@ -1,0 +1,316 @@
+.top-left {
+    display: flex;
+    position:fixed;
+    align-items: center;
+}
+body {
+    font-family: Inter,Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+.Options {
+    font-weight: regular;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(10, 10, 10);
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.logo {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding-left: 22px;
+    padding-top: 10px;
+}
+.logo:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.logo:active {
+    transform: scale(0.9);
+    transition: 0.3s;
+    opacity: 0.8;
+}
+.Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 950px;
+    font-size: 300px;
+}
+
+.Title {
+    font-size: 620px;
+    margin: 0;
+}
+::selection {
+    background-color: #000000;
+    color: white;
+}
+::-moz-selection {
+    background-color: #000000;
+    color: white;
+}
+.Description {
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+    margin-top: -20px;
+    cursor: pointer;
+    transition: 0.3s;;
+}
+.Description:hover {
+    transform: scale(1.1);
+    transition: 0.3s;;
+}
+.Description:active {
+    transform: scale(1.3);
+    transition: 0.3s;
+    opacity: 0.8;
+}
+.video-stage {
+    position: relative;
+    width: 100vw;
+    max-width: none;
+    height: 120vh;
+    min-height: 980px;
+    margin: 0 0 60px 0;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    overflow: hidden;
+    background: #000;
+}
+
+.Video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-backdrop {
+    filter: blur(14px) brightness(0.7) saturate(1.1);
+    transform: scale(1.8);
+}
+
+.video-window {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: min(50vw, 940px);
+    height: min(36vw, 640px);
+    min-width: 420px;
+    min-height: 300px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 32px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.38);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #000;
+}
+
+.video-foreground {
+    width: 210%;
+    height: 210%;
+    transform: scale(1.1) translate3d(0, 0, 0);
+    transition: transform 0.12s linear;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    --video-shift-x: 0px;
+    --video-shift-y: 0px;
+}
+
+.AboutTitle::selection {
+    background-color: rgb(89, 106, 255);;
+    color: white;
+}
+.AboutTitle{
+    font-size: 150px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    color: rgb(89, 106, 255);
+}
+.Description::selection {
+    background-color: rgb(89, 106, 255);;
+    color: white;
+    border-radius: 10px;
+}
+.Title::selection {
+    background-color: rgba(255, 255, 255, 0);;
+    color: rgb(0, 0, 0);
+}
+.logo::selection {
+    background-color: rgba(255, 255, 255, 0);;
+    color: rgb(0, 0, 0);
+}
+.topbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+}
+.TRT {
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.TRT:hover {
+    opacity: 0.7;
+}
+
+.top-right {
+    display: flex;
+    gap: 32px;
+    margin-left: auto;
+    padding-right: 35px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.flash-highlight {
+    animation: flashSection 0.2s ease;
+}
+
+@keyframes flashSection {
+    0% {
+        background-color: transparent;
+        box-shadow: 0 0 0 rgba(89, 106, 255, 0);
+    }
+    20% {
+        background-color: rgba(89, 106, 255, 0.18);
+        box-shadow: 0 0 0 8px rgba(89, 106, 255, 0.12);
+    }
+    100% {
+        background-color: transparent;
+        box-shadow: 0 0 0 rgba(89, 106, 255, 0);
+    }
+}
+.Video::selection {
+    background-color: rgba(255, 255, 255, 0);;
+    color: rgb(0, 0, 0);
+}
+.AboutDescription::selection {
+    background-color: rgb(28, 253, 95);;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.AboutDescription{
+    font-size: 120px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    color: rgb(24, 15, 1);  
+      }
+      footer {
+        background-color: rgb(15, 15, 15);
+        color: white;
+        text-align: center;
+        border-radius: 6px;
+      }
+.AboutSpan {
+    display: inline;
+    background-color: rgb(28, 253, 95);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.AboutSpan::selection {
+    background-color: rgba(255, 255, 255, 0);;
+    color: rgb(0, 0, 0);
+}
+.Footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 0 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    min-width: 120px;
+}
+
+.discord-link {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.FooterText {
+    margin: 0 auto;
+    text-align: center;
+    flex: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.discord {
+    color: white;
+    margin: 0;
+    text-align: right;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.SocialIcon {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.SocialIcon:hover {
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+
+.SocialIcon:active {
+    transform: scale(0.9);
+}
+
+.github-icon {
+    padding-right: 0;
+}
+.footer{
+    margin: 0px;
+    padding: 0px;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.WorkTitle{
+    font-size: 150px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    color: rgb(89, 106, 255);
+}
+.WorkDn{
+    font-size: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    color: rgb(89, 106, 255);
+}
+.WorkDb{
+    font-size: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    color: rgb(255, 89, 144);
+}
